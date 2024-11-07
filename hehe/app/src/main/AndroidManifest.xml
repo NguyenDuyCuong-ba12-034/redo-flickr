@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.edu.usth.hehe">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MyApp"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        <!-- Đặt HomeActivity là activity khởi động -->
+        <activity android:name=".HomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Các activity khác -->
+        <activity android:name=".LoginActivity" android:exported="true" />
+        <activity android:name=".SignUpActivity" android:exported="true" />
+        <activity android:name=".MainActivity" android:exported="true" />
+        <!-- Thêm các activity khác ở đây -->
+        <activity android:name=".AddMoreAlbum" />
+        <activity android:name=".AlbumPublicActivity" />
+        <activity android:name=".AlbumPrivateActivity" />
+        <activity android:name=".SearchActivity" />
+
+
+    </application>
+
+</manifest>
